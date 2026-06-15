@@ -1,0 +1,2 @@
+OnAtStart False
+MinimizeAtStart True
