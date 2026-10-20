@@ -427,27 +427,35 @@ if WinExist("ahk_class Notepad") {
 ^!C:: {
     Run("C:\Windows\System32\calc.exe")
     Sleep(1000)
-    WinActivate("Calculator")
+    if WinExist("Calculator") {
+        WinActivate("Calculator")
+    }
     return
 }
 
 ^!F:: {
     Run("firefox.exe")
     Sleep(1000)
-    WinActivate("ahk_exe firefox.exe")
+    if WinExist("ahk_exe firefox.exe") {
+        WinActivate("ahk_exe firefox.exe")
+    }
     return
 }
 
 ^!G:: {
     Run("C:\Program Files\Google\Chrome\Application\chrome.exe")
     Sleep(1000)
-    WinActivate("ahk_exe chrome.exe")
+    if WinExist("ahk_exe chrome.exe") {
+        WinActivate("ahk_exe chrome.exe")
+    }
     return
 }
 
 ^!D:: {
     Run("C:\Users\LIU\Dropbox")
-    WinActivate("ahk_class CabinetWClass")
+    if WinExist("ahk_class CabinetWClass") {
+        WinActivate("ahk_class CabinetWClass")
+    }
     Sleep(1000)
     return
 }
@@ -455,35 +463,45 @@ if WinExist("ahk_class Notepad") {
 ^!+H:: {
     Run("\\develop-disk\home\liu")
     Sleep(1000)
-    WinActivate("ahk_class CabinetWClass")
+    if WinExist("ahk_class CabinetWClass") {
+        WinActivate("ahk_class CabinetWClass")
+    }
     return
 }
 
 ^!H:: {
     Run("C:\Users\LIU")
     Sleep(1000)
-    WinActivate("ahk_class CabinetWClass")
+    if WinExist("ahk_class CabinetWClass") {
+        WinActivate("ahk_class CabinetWClass")
+    }
     return
 }
 
 ^!M:: {
     Run("C:\Users\LIU\Dropbox\Note")
     Sleep(1000)
-    WinActivate("ahk_class CabinetWClass")
+    if WinExist("ahk_class CabinetWClass") {
+        WinActivate("ahk_class CabinetWClass")
+    }
     return
 }
 
 ^!N:: {
     Run("C:\Users\LIU\Dropbox\Note")
     Sleep(1000)
-    WinActivate("ahk_class CabinetWClass")
+    if WinExist("ahk_class CabinetWClass") {
+        WinActivate("ahk_class CabinetWClass")
+    }
     return
 }
 
 ^!J:: {
     Run("C:\Users\Liu\iCloudDrive\Storage")
     Sleep(1000)
-    WinActivate("ahk_class CabinetWClass")
+    if WinExist("ahk_class CabinetWClass") {
+        WinActivate("ahk_class CabinetWClass")
+    }
     return
 }
 
@@ -502,7 +520,9 @@ if WinExist("ahk_class Notepad") {
 ^!L:: {
     Send("^{!+L}")
     Sleep(1000)
-    WinActivate("ahk_exe MDict.exe")
+    if WinExist("ahk_exe MDict.exe") {
+        WinActivate("ahk_exe MDict.exe")
+    }
     return
 }
 
@@ -520,7 +540,9 @@ if WinExist("ahk_class Notepad") {
 ^!R:: {
     Run("C:\")
     Sleep(1000)
-    WinActivate("ahk_class CabinetWClass")
+    if WinExist("ahk_class CabinetWClass") {
+        WinActivate("ahk_class CabinetWClass")
+    }
     return
 }
 
@@ -557,14 +579,18 @@ if WinExist("ahk_class Notepad") {
 ^!V:: {
     Run("notepad")
     Sleep(1000)
-    WinActivate("ahk_exe Notepad.exe")
+    if WinExist("ahk_exe Notepad.exe") {
+        WinActivate("ahk_exe Notepad.exe")
+    }
     return
 }
 
 ^!+V:: {
     Run("C:\Program Files\Sublime Text\sublime_text.exe")
     Sleep(1000)
-    WinActivate("ahk_exe sublime_text.exe")
+    if WinExist("ahk_exe sublime_text.exe") {
+        WinActivate("ahk_exe sublime_text.exe")
+    }
     return
 }
 
