@@ -3,6 +3,11 @@ keyboard
 ========
 
 
-Keyboard tools.
+Keyboard software and configurations.  
 
-On Windows, clone it and put into `C:\`.
+
+List
+----
+
+AutoHotKey
+Input Method Quick Switcher
