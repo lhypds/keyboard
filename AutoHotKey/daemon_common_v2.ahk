@@ -594,16 +594,23 @@ if WinExist("ahk_class Notepad") {
     return
 }
 
-^!8:: {
+;English
+;^!8:: {
+;    Send("{F19}")
+;    return
+;}
+^!U:: {
     Send("{F19}")
     return
 }
 
+;Chinese
 ^!9:: {
     Send("{F17}")
     return
 }
 
+;Japanese
 ^!0:: {
     Send("{F18}")
     return

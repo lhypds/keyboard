@@ -1,5 +1,0 @@
-Japanese,ja-JP,F17
-Chinese (Simplified) - US,zh-CN,F18
-日本語,ja-JP,Space
-US,en-US,ControlKey
-中国語 (簡体字) - US,zh-CN,ShiftKey
