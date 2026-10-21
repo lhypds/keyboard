@@ -512,7 +512,8 @@ if WinExist("ahk_class Notepad") {
 }
 
 ^!O:: {
-    currentTime := FormatTime(A_Now, 'HHmmss')
+    ;currentTime := FormatTime(A_Now, 'HHmmss')
+    currentTime := FormatTime(A_Now, 'HHmm')
     SendText(currentTime)
     return
 }
