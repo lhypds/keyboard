@@ -505,6 +505,13 @@ if WinExist("ahk_class Notepad") {
     return
 }
 
+^!U:: {
+    ;currentTime := FormatTime(A_Now, 'yyyyMMddHHmmss')
+    currentTime := FormatTime(A_Now, 'yyyyMMddHHmm')
+    SendText(currentTime)
+    return
+}
+
 ^!I:: {
     currentDate := FormatTime(A_Now, 'yyyyMMdd')
     SendText(currentDate)
@@ -596,11 +603,7 @@ if WinExist("ahk_class Notepad") {
 }
 
 ;English
-;^!8:: {
-;    Send("{F19}")
-;    return
-;}
-^!U:: {
+^!8:: {
     Send("{F19}")
     return
 }
